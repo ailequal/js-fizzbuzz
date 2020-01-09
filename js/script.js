@@ -1,19 +1,38 @@
-// print numbers from 1 to 100
-var arrayNumbers = [];
-for (var i = 0; i < 100; i++) {
-  arrayNumbers.push(i + 1);
-  if (arrayNumbers[i] % 3 !== 0 && arrayNumbers[i] % 5 !== 0) {
-    console.log(arrayNumbers[i]);
-  } else if (arrayNumbers[i] % 3 == 0 && arrayNumbers[i] % 5 == 0) {
+// var
+var i = 0;
+var arrayForNumbers = [];
+var arrayWhileNumbers = [];
+
+// for version
+console.log('---for version---')
+for (i = 0; i < 100; i++) {
+  arrayForNumbers.push(i + 1);
+  if (arrayForNumbers[i] % 3 !== 0 && arrayForNumbers[i] % 5 !== 0) {
+    console.log(arrayForNumbers[i]);
+  } else if (arrayForNumbers[i] % 3 == 0 && arrayForNumbers[i] % 5 == 0) {
     console.log('fizzbuzz');
-  } else if (arrayNumbers[i] % 3 == 0) {
+  } else if (arrayForNumbers[i] % 3 == 0) {
     console.log('fizz');
-  } else if (arrayNumbers[i] % 5 == 0) {
+  } else if (arrayForNumbers[i] % 5 == 0) {
     console.log('buzz');
   }
 }
-console.log(arrayNumbers);
+console.log(arrayForNumbers);
 
-// x3 are 'fizz', not numbers
-// x5 are 'buzz', not numbers
-// x3 && x5 are 'fizzbuzz', not numbers
+// while version
+console.log('---while version---')
+i = 0;
+while (i < 100) {
+  arrayWhileNumbers.push(i + 1);
+  if (arrayWhileNumbers[i] % 3 !== 0 && arrayWhileNumbers[i] % 5 !== 0) {
+    console.log(arrayWhileNumbers[i]);
+  } else if (arrayWhileNumbers[i] % 3 == 0 && arrayWhileNumbers[i] % 5 == 0) {
+    console.log('fizzbuzz');
+  } else if (arrayWhileNumbers[i] % 3 == 0) {
+    console.log('fizz');
+  } else if (arrayWhileNumbers[i] % 5 == 0) {
+    console.log('buzz');
+  }
+  i++;
+}
+console.log(arrayWhileNumbers);
