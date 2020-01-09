@@ -6,16 +6,19 @@
 }
 
 body {
+  min-width: 320px;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 ul {
+  margin: 20px 40px;
   list-style: decimal;
 }
 
 /* main */
 .title {
+  margin: 20px;
   text-align: center;
 }
 
