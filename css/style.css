@@ -7,23 +7,74 @@
 
 body {
   min-width: 320px;
+  background-color: #f5f0e3;
   font-family: sans-serif;
   font-size: 20px;
 }
 
 ul {
-  margin: 20px 40px;
+  margin-top: 20px;
   list-style: decimal;
+}
+
+.red {
+  color: #f0134d;
+}
+
+.orange {
+  color: #ff6f5e;
+}
+
+.azure {
+  color: #40bfc1;
 }
 
 /* main */
 .title {
   margin: 20px;
   text-align: center;
+  color: #f0134d;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    display: block;
+  }
+}
+
+.for,
+.while {
+  max-width: 80px;
+  margin: 20px 30px;
+}
+
+.rules {
+  max-width: 400px;
+  margin: 20px 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .for,
+  .while {
+    margin: 40px auto;
+  }
+
+  .rules {
+    margin: 20px auto;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  color: #ff6f5e;
+}
+
+.paragraph {
+  margin: 20px;
+  color: #40bfc1;
 }
